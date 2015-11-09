@@ -9,11 +9,10 @@
 [Left joystick, X-axis] Ch4 = X1 (Srafe)
 [Right joystick, X-axis] Ch1 = X2 (Rotation)
 
-Before testing Mecanum Drive, make sure that the rollers of
-each wheel are inverted with respect to the adjacent wheels. */
-
 /* Holonomic: for DFR/DBR/DFL/DBL...
-		Intake1 is bottom, Intake2 is right */
+		Intake1 is bottom, Intake2 is right
+
+		DFR and DBR have been reversed in this program.	*/
 
 
 task main()
