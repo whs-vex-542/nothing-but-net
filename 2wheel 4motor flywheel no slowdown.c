@@ -10,6 +10,8 @@
 
 	// Working as of 11/10/2015
 
+	//FW 1 AND 2 ARE RIGHT, FW 3 AND 4 ARE LEFT, flywheel shooting side is front
+
 void Flywheel(int speed)
 {
 	motor[FW1] = speed;
