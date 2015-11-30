@@ -13,6 +13,8 @@
 /* Flywheel is front, intake is back.
 Looking directly at the flywheel, ports 2 and 3 are left; ports 4 and 5 are right. */
 
+// OUTDATED, ONLY REFERENCE //////////
+
 void Flywheel(int speed)
 {
 	motor[FW1] = speed;
