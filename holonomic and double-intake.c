@@ -11,7 +11,7 @@
 [Left joystick, X-axis] Ch4 = X1 (Srafe)
 [Right joystick, X-axis] Ch1 = X2 (Rotation)
 
-/* Holonomic: for DFR/DBR/DFL/DBL...
+Holonomic: for DFR/DBR/DFL/DBL...
 Intake1 is bottom, Intake2 is right */
 
 // 11/23/15: Holonomic drive and intake program, Intake2 reversed in this program
