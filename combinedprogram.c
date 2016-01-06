@@ -148,14 +148,8 @@ void pre_auton()
 task autonomous()
 {
 
-/* Flywheel(127);
-	wait1Msec(2000);
-	Flywheel(127);
-	intake(127);
-
-
-
-*/
+	// Autonomous 0: Spin flywheel at lower power, drive straight for 2 seconds, flywheel at full
+	//							power, wait 1 second, intake at full power
 	Flywheel(50);
   driveStraight(127);
   wait1Msec(2000);
@@ -163,9 +157,12 @@ task autonomous()
   Flywheel(127);
   wait1Msec(1000);
   intake(127);
-	// Autonomous 0: Spin flywheel at full power perpetually
-	/* Flywheel(25);
-	 driveStraight(127);
+
+
+	/*
+	Autonomous 1: Spin flywheel at full power perpetually
+	Flywheel(25);
+	driveStraight(127);
 	wait1Msec(750);
 	Flywheel(50);
 	driveStraight(0);
@@ -173,23 +170,21 @@ task autonomous()
 	wait1Msec(2000);
 	Flywheel(127);
 	strafe(0);
-	intake(127); */
-
-	/*
-	Autonomous 1: Spin the Flywheel, then move
-	Flywheel(127);
-	//confirm that ball has been launched
-	checkSensorValue(some distance, 127);
-
+	intake(127);
 	*/
 
 	/*
-	Autonomous 2: run forward and try to control some of the balls on the floor
+	Autonomous 2: Spin the Flywheel, then move
+	Flywheel(127);
+	//confirm that ball has been launched
+	checkSensorValue(some distance, 127);
+	*/
+
+	/*
+	Autonomous 3: run forward and try to control some of the balls on the floor
 	motor[conveyor] = 100;
 	checkSensorValue(500,127);
 	gyroTurn(420);
-
-
 	*/
 }
 
